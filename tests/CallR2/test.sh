@@ -5,4 +5,4 @@ cd $( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 # change to project directory
 cd ../..
 
-./build/call_r2_merge -R1 R1.fq -R2 R2.fq -source source.fq -delimiter " " -sta 0 -end 150
+./build/fqtools call-R2 -R1 tests/CallR2/R1.fq -R2 tests/CallR2/R2.fq -source tests/CallR2/source.fq -delimiter " " -sta 0 -end 150
