@@ -5,7 +5,7 @@
             "type": "cppdbg",
             "request": "launch",
             "program": "${fileDirname}/${fileBasenameNoExtension}",
-            "args": ["truncate", "<", "tests/Truncate/test.fq"],
+            "args": ["split-index", "-R1", "tests/SplitIndex/R1.fq", "-R2", "tests/SplitIndex/R2.fq", "-delimiter", "\" \""],
             "stopAtEntry": false,
             "cwd": "${fileDirname}/..",
             "environment": [],

@@ -3,6 +3,6 @@ project(fqtools)
 
 add_executable(fqtools main.cpp)
 set(CMAKE_BUILD_TYPE "Release")
-target_compile_options(fqtools PRIVATE -O3 -std=c++20 -static)
+target_compile_options(fqtools PRIVATE -O3 -std=c++23 -static)
 
 install(TARGETS fqtools RUNTIME DESTINATION bin)

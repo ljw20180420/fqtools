@@ -8,11 +8,11 @@ private:
 
     void help(int argc, char **argv)
     {
-        if (!std::cin.eof())
+        if (argc < 2)
         {
             return;
         }
-        if (argc < 2 || !strcmp(argv[1], "-h") || !strcmp(argv[1], "--help") || !strcmp(argv[1], "-help"))
+        if (!strcmp(argv[1], "-h") || !strcmp(argv[1], "--help") || !strcmp(argv[1], "-help"))
         {
             std::cout << "fqtools truncate -sta truncate_start[optional, default: 0] -end truncate_end[optional, default: end_of_read]\n";
             exit(0);
